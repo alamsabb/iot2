@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Hey! Sabbir Alam</title>
+</head>
+<body>
+	
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand"><i class='bx bxs-smile icon'></i> Hey! Sabbir</a>
+		<ul class="side-menu">
+			<li><a href="#" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+			<li class="divider" data-text="main">Main</li>
+			<li>
+				<a href="#"><i class='bx bxs-inbox icon' ></i> Elements <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#">Buzzer</a></li>
+					<li><a href="#">LED</a></li>
+					<li><a href="#">Breadcrumbs</a></li>
+					<li><a href="#">Button</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class='bx bxs-chart icon' ></i> Charts</a></li>			
+			<li class="divider" data-text="table and forms">Table and forms</li>
+			<li><a href="#"><i class='bx bx-table icon' ></i> Tables</a></li>
+			<li>
+				<a href="#"><i class='bx bxs-notepad icon' ></i> Forms <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#">Kuch Bhi</a></li>
+					<li><a href="#">Likhna tha</a></li>
+					<li><a href="#">Taaki </a></li>
+					<li><a href="#">Achha dikhe</a></li><!--Dropdown bana ne aata hai to need to flex baaki iska koi kaam nhi hai website me-->
+				</ul>
+			</li>
+		</ul>
+		
+		</div>
+	</section>
+	<!-- SIDEBAR -->
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+				<div class="form-group">
+					<input type="text" placeholder="Search...">
+					<i class='bx bx-search icon' ></i>
+				</div>
+			</form>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-bell icon' ></i>
+				<span class="badge">5</span>
+			</a>					
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="asserts/sabb.jpg" alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+		<!-- MAIN -->
+		<main>
+			<h1 class="title">Dashboard</h1>
+			<ul class="breadcrumbs">
+				<li><a href="#">Home</a></li>
+				<li class="divider">/</li>
+				<li><a href="#" class="active">Dashboard</a></li>
+			</ul>
+			<div class="info-data">
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2 id="heartRate"></h2>
+							<p>Heart Rate</p>
+						</div>
+						<i class='bx bx-trending-up icon' ></i>
+					</div>
+					<span class="progress" data-value="80%"></span>
+					<span class="label">normal</span>
+				</div>
+				<!-- <div class="card">
+					<div class="head">
+						<div>
+							<h2>78/110</h2>
+							<p>Blood Pressure</p>
+						</div>
+						<i class='bx bx-trending-down icon down' ></i>
+					</div>
+					<span class="progress" data-value="60%"></span>
+					<span class="label">slightly low</span>
+				</div> -->
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2 id="bodyTemp"></h2>
+							<p>Body temperature</p>
+						</div>
+						<i class='bx bx-trending-up icon' ></i>
+					</div>
+					<span class="progress" data-value="90%"></span>
+					<span class="label">perfect</span>
+				</div>
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2 id="spo"></h2>
+							<p>Oxygen level</p>
+						</div>
+						<i class='bx bx-trending-up icon' ></i>
+					</div>
+					<span class="progress" data-value="80%"></span>
+					<span class="label">perfect</span>
+				</div>
+			</div>
+			<div class="data">
+				<div class="content-data">
+					<div class="head">
+						<h3>Heart Rate</h3>
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Edit</a></li>
+								<li><a href="#">Save</a></li>
+								<li><a href="#">Remove</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="chart">
+						<div id="chart"></div>
+					</div>
+				</div>
+				<div class="content-data">
+					<div class="head">
+						<h3>Chatbox</h3>
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Edit</a></li>
+								<li><a href="#">Save</a></li>
+								<li><a href="#">Remove</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="chat-box">
+						<p class="day"><span>Today's Report</span></p>
+						<div class="msg">
+							<img src="asserts/sabb.jpg" alt="">
+							<div class="chat">
+								<div class="profile">
+									<span class="username">Dr.Lipsa Ansari</span>
+									<span class="time">18:30</span>
+								</div>
+								<p>Hello Dr. May i know my health report?</p>
+							</div>
+						</div>
+						<div class="msg me">
+							<div class="chat">
+								<div class="profile">
+									<span class="time">18:30</span>
+								</div>
+								<p>As per the previous reports your BP is normal and not a matter of concern but you need to take care of your heart because you really have a toxic gf who is detoriating your heart day by day :).</p>
+							</div>
+						</div>
+						<div class="msg me">
+							<div class="chat">
+								<div class="profile">
+									<span class="time">18:30</span>
+								</div>
+								<p>Hope you are doing well now because she is far away from you right now.Hope for your best recovery.</p>
+							</div>
+						</div>
+						<div class="msg me">
+							<div class="chat">
+								<div class="profile">
+									<span class="time">18:30</span>
+								</div>
+								<p>Lorem ipsum, dolor sit amet.</p>
+							</div>
+						</div>
+					</div>
+					<form action="#">
+						<div class="form-group">
+							<input type="text" placeholder="Type...">
+							<button type="submit" class="btn-send"><i class='bx bxs-send' ></i></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- NAVBAR -->
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="socket.io/socket.io.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
