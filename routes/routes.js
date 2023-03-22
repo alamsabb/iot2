@@ -1,7 +1,7 @@
 const app = require('express')();
 
 app.get('/health',(req,res)=>{
-    res.code(400).send("App is live and running fine!");
+    res.send("App is live and running fine!");
 });
 
 app.get('/update',(req,res)=>{
