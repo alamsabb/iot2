@@ -1,10 +1,10 @@
 const app = require('express')();
 
-app.get(':temp/:ecg/:heartrate/:spo',(req,res)=>{
+app.get('/health',(req,res)=>{
     res.send("App is live and running fine!");
 });
 
-app.get('/update',(req,res)=>{
+app.get('/:temp/:ecg/:heartrate/:spo',(req,res)=>{
     console.log(req.query);
     data = req.query;
     res.send("1");
