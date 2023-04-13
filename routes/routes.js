@@ -1,6 +1,6 @@
 const app = require('express')();
 
-app.get('/health',(req,res)=>{
+app.get(':temp/:ecg/:heartrate/:spo',(req,res)=>{
     res.send("App is live and running fine!");
 });
 
